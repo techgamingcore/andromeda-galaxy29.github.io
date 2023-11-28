@@ -1,14 +1,14 @@
 season = prompt("Какое ваше любимое время года?");
-if(season == "зима"){
+if(season == "зима" || season == "Зима"){
     alert("Норвегия - ваш лучший выбор!");
 }
-else if(season == "весна"){
+else if(season == "весна" || season == "Весна"){
     alert("Placeholder Country - ваш лучший выбор!");
 }
-else if(season == "лето"){
+else if(season == "лето" || season == "Лето"){
     alert("Малдивы - ваш лучший выбор!");
 }
-else if(season == "осень"){
+else if(season == "осень" || season == "Осень"){
     alert("Канада - ваш лучший выбор!");
 }
 else{
