@@ -3,7 +3,7 @@ if(season == "зима" || season == "Зима"){
     alert("Норвегия - ваш лучший выбор!");
 }
 else if(season == "весна" || season == "Весна"){
-    alert("Placeholder Country - ваш лучший выбор!");
+    alert("Франция - ваш лучший выбор!");
 }
 else if(season == "лето" || season == "Лето"){
     alert("Малдивы - ваш лучший выбор!");
