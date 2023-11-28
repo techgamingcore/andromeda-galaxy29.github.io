@@ -1,17 +1,16 @@
 season = prompt("Какое ваше любимое время года?");
-answer = " - ваш лучший выбор!"
 if(season == "зима"){
-    alert("Норвегия" + answer)
+    alert("Норвегия - ваш лучший выбор!");
 }
 else if(season == "весна"){
-    alert("Placeholder Country" + answer)
+    alert("Placeholder Country - ваш лучший выбор!");
 }
 else if(season == "лето"){
-    alert("Малдивы" + answer)
+    alert("Малдивы - ваш лучший выбор!");
 }
 else if(season == "осень"){
-    alert("Канада" + answer)
+    alert("Канада - ваш лучший выбор!");
 }
 else{
-    alert("Приезжайте в Россию! Для вас найдем любой климат.")
+    alert("Приезжайте в Россию! Для вас найдем любой климат.");
 }
