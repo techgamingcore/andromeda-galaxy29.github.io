@@ -14,4 +14,7 @@ if (c = x1){
     b = x1
 }
 
+alert(Math.pow(c, 2))
+alert(Math.pow(a, 2))
+alert(Math.pow(b, 2))
 alert(Math.pow(c, 2) == Math.pow(a, 2) + Math.pow(b, 2))
