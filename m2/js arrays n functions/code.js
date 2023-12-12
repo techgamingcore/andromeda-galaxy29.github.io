@@ -1,10 +1,9 @@
 function printNumbers(){
-    n = parseInt(document.getElementById("input").innerHTML);
+    n = parseInt(document.getElementById("input").value);
     array = [];
 
     for (i = 1; i<=n; i++){
         array[i-1] = i;
     }
-    console.log(String(array))
     document.getElementById("output").innerHTML=String(array);
 }
