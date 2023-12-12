@@ -41,6 +41,7 @@ function main(){
     n = parseInt(document.getElementById("input").value);
     array = Array.apply(null, Array(n))
     pushArrayRandom(array)
+    console.log(amountEvenInArray(array))
     if (amountEvenInArray(array) < 20){
         showArrayToConsole(array)
     }else{
