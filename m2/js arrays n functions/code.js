@@ -39,7 +39,7 @@ function amountEvenInArray(array){
 
 function main(){
     n = parseInt(document.getElementById("input").value);
-    array = Array.apply(null, Array(5))
+    array = Array.apply(null, Array(n))
     pushArrayRandom(array)
     if (amountEvenInArray(array) < 20){
         showArrayToConsole(array)
