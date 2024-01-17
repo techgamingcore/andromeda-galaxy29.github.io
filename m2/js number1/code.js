@@ -9,8 +9,9 @@ function main(){
         x2 = (-b - Math.sqrt(D)) / (2 * a);
         document.getElementById("output").innerHTML = "x1= "+String(x1)+", x2= "+String(x2);
     } else if (D == 0) {
-        alert(-b / (2 * a));
+        x=(-b / (2 * a));
+        document.getElementById("output").innerHTML = "x= "+String(x);
     } else {
-        alert("Нет корней");
+        document.getElementById("output").innerHTML = "Нет корней";
     }
 }
