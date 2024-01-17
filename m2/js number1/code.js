@@ -5,8 +5,9 @@ function main(){
     
     D = Math.pow(b, 2) - (4 * a * c);
     if (D > 0) {
-        alert((-b + Math.sqrt(D)) / (2 * a));
-        alert((-b - Math.sqrt(D)) / (2 * a));
+        x1 = (-b + Math.sqrt(D)) / (2 * a);
+        x2 = (-b - Math.sqrt(D)) / (2 * a);
+        document.getElementById("output").innerHTML = "x1= "+String(x1)+", x2= "+String(x2);
     } else if (D == 0) {
         alert(-b / (2 * a));
     } else {
