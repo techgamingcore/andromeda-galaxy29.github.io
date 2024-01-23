@@ -1,3 +1,13 @@
-#train {
+#train:hover {
+    animation-duration: 3s;
+    animation-name: go
+}
 
+@keyframes go {
+    from {
+        transform: translate(0px, 0px)
+    }
+    from {
+        transform: translate(100px, 50px)
+    }
 }
