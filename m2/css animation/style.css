@@ -1,5 +1,8 @@
-#train {
+img {
     width: 100px;
+}
+
+#train {
     transform: translate(800px, 100px)
 }
 
@@ -19,3 +22,4 @@
         transform: translate(800px, 100px) scale(100%)
     }
 }
+
