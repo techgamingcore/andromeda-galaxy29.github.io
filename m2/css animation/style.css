@@ -11,20 +11,50 @@ img {
     transform: translate(800px, 100px)
 }
 
-#train:hover {
+#traindiv:hover #train {
     animation-duration: 3s;
+    animation-fill-mode: forwards;
     animation-name: go;
 }
 
 @keyframes go {
-    0% {
+    from {
         transform: translate(800px, 100px) scale(100%)
     }
-    90% {
+    to {
         transform: translate(100px, 100px) scale(250%)
-    }
-    100% {
-        transform: translate(800px, 100px) scale(100%)
     }
 }
 
+#snowman:hover #snow1 {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: snow1;
+}
+@keyframes snow1 {
+    to {
+        transform: translate(100px, 0px) scale(100%)
+    }
+}
+
+#snowman:hover #snow2 {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: snow2;
+}
+@keyframes snow2 {
+    to {
+        transform: translate(-4px, 70px) scale(130%)
+    }
+}
+
+#snowman:hover #snow3 {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: snow3;
+}
+@keyframes snow3 {
+    to {
+        transform: translate(-108px, 150px) scale(160%)
+    }
+}
