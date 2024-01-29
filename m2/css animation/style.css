@@ -33,7 +33,7 @@ img {
 }
 @keyframes snow1 {
     to {
-        transform: translate(100px, 0px) scale(100%)
+        transform: translate(100px, 150px) scale(160%)
     }
 }
 
@@ -55,6 +55,17 @@ img {
 }
 @keyframes snow3 {
     to {
-        transform: translate(-108px, 150px) scale(160%)
+        transform: translate(-108px, 0px) scale(100%)
+    }
+}
+
+#snowman:hover #smile {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: smile;
+}
+@keyframes smile {
+    to {
+        transform: translate(-212px, -5px) scale(70%)
     }
 }
