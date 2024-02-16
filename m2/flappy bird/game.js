@@ -43,9 +43,15 @@ function jump() {
 }
 function moveLeft() {
     bird_x -= 2
+    if(bird_x < 0){
+        bird_x = 0
+    }
 }
 function moveRight() {
     bird_x += 2
+    if(bird_x + bird.width > canvas.width){
+        bird_x = canvas.width - bird.width
+    }
 }
 
 function reset() {
