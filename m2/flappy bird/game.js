@@ -15,3 +15,5 @@ pipe_bottom.src = "assets/pipe_bottom.png"
 function draw(){
     context.drawImage(bg, 0, 0)
 }
+
+pipe_bottom.onload = draw()
