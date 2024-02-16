@@ -15,22 +15,37 @@ pipe_bottom.src = "assets/pipe_bottom.png"
 const gap = 108
 const gravity = 0.3
 const jump_height = 5
-const bird_x = 32
 const difficulty = 0.1
 
 var score
 var just_scored = false
 var highscore = 0
 var bird_y
+var bird_x
 var bird_accel
+var just_jumped
 var pipe_x
 var pipe_y
 var pipe_speed
 reset()
 
-document.addEventListener("keydown", jump)
+var keys = {}
+document.addEventListener("keydown", e => {
+    keys[e.key] = true
+})
+document.addEventListener('keyup', e => {
+    delete keys[e.key];
+    just_jumped = false
+})
+
 function jump() {
     bird_accel = -jump_height
+}
+function moveLeft() {
+    bird_x -= 2
+}
+function moveRight() {
+    bird_x += 2
 }
 
 function reset() {
@@ -38,14 +53,27 @@ function reset() {
     just_scored = false
 
     bird_y = 100
+    bird_x = 32
     bird_accel = 0
+    just_jumped = false
 
     pipe_x = canvas.width
     pipe_y = 0
     pipe_speed = 2
 }
 
-function draw() {
+function update() {
+    if((keys["w"] || keys[" "] || keys["ArrowUp"]) && !just_jumped){
+        jump()
+        just_jumped = true
+    }
+    if(keys["a"] || keys["ArrowLeft"]){
+        moveLeft()
+    }
+    if(keys["d"] || keys["ArrowRight"]){
+        moveRight()
+    }
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(bg, 0, 0)
 
@@ -93,7 +121,7 @@ function draw() {
     ctx.fillText("Highscore: " + highscore, 10, canvas.height - 20);
     ctx.fillText("Score: " + score, 10, canvas.height - 50);
 
-    requestAnimationFrame(draw)
+    requestAnimationFrame(update)
 }
 
-pipe_bottom.onload = draw
+pipe_bottom.onload = update
