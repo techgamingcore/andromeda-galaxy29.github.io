@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #i1 {
+            background-color: white;
+            border: chocolate solid 2px;
+            border-radius: 8px;
+            transition-duration: 0.1s;
+        }
+        #i1:hover {
+            outline: chocolate solid 2px;
+        }
+        #i1:active {
+            background-color: chocolate;
+        }
+
+        #i2 {
+            border: none;
+            background-color: rgb(241, 241, 241);
+            border-radius: 8px;
+            box-shadow: 3px 3px 6px dimgray;
+            transition-duration: 0.2s;
+        }
+        #i2:hover {
+            background-color: white;
+        }
+        #i2:active {
+            box-shadow: 3px 3px 6px dimgray inset;
+        }
+
+        #i3 {
+            border-top: solid lightgray 4px;
+            border-right: solid lightgray 4px;
+            border-bottom: solid dimgray 4px;
+            border-left: solid dimgray 4px;
+            background-color: darkgray;
+            color: dimgray;
+            transition-duration: 0.1s;
+        }
+        #i3:hover {
+            color: black
+        }
+        #i3:active {
+            border-top: solid dimgray 4px;
+            border-right: solid dimgray 4px;
+            border-bottom: solid lightgray 4px;
+            border-left: solid lightgray 4px;
+        }
+
+        #i4 {
+            background-color:red;
+            border: 2px solid red;
+            border-radius: 16px;
+            color: white;
+            transition-duration: 0.1s;
+            box-shadow: 0 8px 0 darkred;
+        }
+        #i4:hover {
+            border: 2px solid lightcoral;
+        }
+        #i4:active {
+            transform: translate(0, 8px);
+            box-shadow: 0 0 0 darkred;
+        }
+
+        #i5 {
+            background-color:dodgerblue;
+            border: none;
+            border-radius: 8px;
+            color: white;
+        }
+        #i5:hover {
+            background-color:rgb(86, 134, 223)
+        }
+        #i5:active {
+            outline: 3px solid rgba(0, 162, 255, 0.63);
+        }
+    </style>
+</head>
+<body>
+    <button id="i1">Кнопка 1</button><br>
+    <button id="i2">Кнопка 2</button><br>
+    <button id="i3">Кнопка 3</button><br>
+    <button id="i4">Кнопка 4</button><br>
+    <button id="i5">Кнопка 5</button><br>
+</body>
+</html>

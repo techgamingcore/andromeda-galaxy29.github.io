@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: darkslategray;
+
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    background-color: dodgerblue;
+    margin: 0;
+    padding: 10px
+}
+
+main {
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#side-panel {
+    padding: 10px;
+    background-color: lightgray;
+}
+
+#main-panel {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+footer {
+    margin: 0;
+    padding: 10px;
+}
